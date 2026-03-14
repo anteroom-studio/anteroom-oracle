@@ -1,215 +1,208 @@
 ZAI ORACLE 🔮
 The All-Seeing Eye — Markets · Wars · Politics · Geopolitics
+<p align="center">
 
-Created by Zawwar
-github.com/Zawwarsami16
 
-What Is ZAI Oracle?
 
-Most tools show price charts.
+
+
+
+
+
+</p>
+Oracle Vision
+
+Most market tools show price charts.
 Most news tools show headlines.
 
 ZAI Oracle does something different.
 
-It scans:
+It scans the entire world system in real-time:
 
-• global markets
-• wars and conflicts
-• geopolitical risk
-• energy supply shocks
-• political instability
-• crypto signals
-• historical crisis patterns
+Markets        → stocks, crypto, volatility
+Geopolitics    → wars, sanctions, conflicts
+Energy         → oil, gas, supply shocks
+Politics       → elections, Congress trades
+Crypto         → whale wallets, ETF flows
+History        → crisis pattern matching
 
-Then it asks:
 
-Given everything happening in the world right now, what is the most likely outcome?
+Then Oracle asks:
 
-Oracle combines real-time data + historical pattern recognition + AI reasoning to produce a macro outlook and tactical market stance.
+Given everything happening right now, what is the most probable outcome?
 
-What Oracle Actually Does
+Terminal Preview
+╔══════════════════════════════════════════════════════════════╗
+║           ZAI ORACLE — THE ALL-SEEING EYE                    ║
+║           Global Macro + Geopolitical Intelligence           ║
+╚══════════════════════════════════════════════════════════════╝
 
-Oracle continuously analyzes multiple global systems simultaneously.
+Market Feeds:     21 / 22 verified
+Geopolitical Risk Index: 47 / 100
+Market Regime:    Elevated Risk
 
-System	Description
-Market Scanner	Tracks stocks, commodities, crypto and volatility
-Geopolitical Scanner	Detects wars, sanctions, diplomatic shifts
-Energy Monitor	Oil, natural gas, supply route disruption
-Political Signals	Elections, policy, Congress trading
-Crypto Intelligence	Whale wallets, ETF flows, regulation news
-Historical Engine	Compares today with past crises
-Scenario Engine	Simulates possible market outcomes
-Risk Index	Calculates global instability score
-What Data It Uses
-Domain	Sources
-Markets	S&P500, NASDAQ, Oil, Gold, Silver, BTC, ETH, VIX, DXY, yields
-Geopolitics	Reuters, Al Jazeera, Crisis Group, Foreign Policy
-Wars	Live conflict headlines + war escalation signals
-Energy	Oil price feeds, OPEC news, energy supply routes
-Crypto	CoinDesk, CoinTelegraph, whale wallets
-Politics	Congress trades, elections, regulation
-Natural Disasters	WHO outbreaks, earthquakes, weather
-Sanctions	OFAC actions, SEC enforcement
-History	20+ major crises from 1914 → 2022
+Active Signals:
+• Oil supply stress
+• Military escalation signals
+• Inflation pressure
+• Crypto ETF inflows
+
+Oracle Outlook:
+Base Case → Sideways
+Bull Case → Relief rally
+Bear Case → Liquidity shock
+
 One Command
-
-Running Oracle requires only one command.
-
 python3 zai_oracle.py
 
 
-Oracle will automatically:
+Oracle automatically runs:
 
-• scan markets
-• analyze geopolitical risk
-• compare with history
-• generate scenarios
-• produce a tactical outlook
+world_scanner      → fetch markets + news
+history_engine     → compare with past crises
+scenario_engine    → calculate outcomes
+oracle_brain       → AI reasoning
+dashboard          → terminal output
 
-Setup
-1 Clone the Repository
+Quick Setup
+
+Clone repository
+
 git clone https://github.com/Zawwarsami16/ZAI-Oracle
 cd ZAI-Oracle
 
-2 Create Environment File
+
+Create environment file
+
 cp .env.example .env
 nano .env
 
-3 Add AI Key (Recommended)
+
+Add your key
+
 GROQ_KEY=gsk_your_key_here
 
 
-Free key available at:
+Run Oracle
 
-groq.com → API Keys
-
-4 Run Oracle
 python3 zai_oracle.py
 
-Command Examples
+Command Modes
+Live Intelligence Mode
+python3 zai_oracle.py
 
-These commands allow deeper analysis and historical simulation.
 
-Command	Description
-python3 zai_oracle.py	Full live world analysis
-python3 zai_oracle.py --replay gulf-war	Gulf War 1990 replay
-python3 zai_oracle.py --replay 2008-gfc	Global Financial Crisis 2008
-python3 zai_oracle.py --replay ukraine-invasion	Russia-Ukraine War 2022
-python3 zai_oracle.py --replay covid-crash	COVID crash 2020
-python3 zai_oracle.py --replay 1973-oil-shock	OPEC oil embargo 1973
-python3 zai_oracle.py --replay dotcom-peak	Dot-com bubble 2000
-python3 zai_oracle.py --scenario oil=115,vix=36	Custom macro scenario
-python3 zai_oracle.py --list-crises	List historical events
-Crisis Replay Engine
+Runs full global analysis.
 
-Oracle can simulate historical events and compare them to today.
+Crisis Replay Mode
 
-Example:
+Replays historical market events.
 
 python3 zai_oracle.py --replay gulf-war
+python3 zai_oracle.py --replay 2008-gfc
+python3 zai_oracle.py --replay ukraine-invasion
+python3 zai_oracle.py --replay covid-crash
+python3 zai_oracle.py --replay 1973-oil-shock
+python3 zai_oracle.py --replay dotcom-peak
 
 
-Oracle will show:
+Oracle shows:
 
-• market reaction on that day
 • signals active during the crisis
 • predicted regime
-• what actually happened later
-• accuracy assessment
-
-This allows pattern recognition across history.
+• real historical outcome
+• accuracy evaluation
 
 Scenario Engine
 
-You can test custom macro scenarios.
-
-Example:
+Create hypothetical macro scenarios.
 
 python3 zai_oracle.py --scenario oil=115,vix=36
 
 
-Oracle will calculate:
+Oracle generates:
 
-• Bear case
-• Base case
-• Bull case
+Bear Case
+Base Case
+Bull Case
+Probability Distribution
 
-Then generate a probability weighted outlook.
+Crisis Database
 
-AI Modes
+List all historical events available.
 
-Oracle automatically selects the best AI available.
+python3 zai_oracle.py --list-crises
 
-Condition	AI Used
-GROQ_KEY present	Groq llama3-70B
-GEMINI_KEY present	Google Gemini
-ANTHROPIC_KEY present	Claude
-Ollama installed	Local LLM
-No AI available	Rule-based prediction
-Historical Crisis Database
+Data Coverage
+System	Coverage
+Markets	S&P500, NASDAQ, Oil, Gold, BTC, ETH, VIX
+Geopolitics	Reuters, Crisis Group, Foreign Policy
+Wars	Live conflict signals
+Energy	Oil supply + OPEC
+Politics	Congress trades
+Crypto	Whale wallets
+Disasters	Earthquakes, outbreaks
+Sanctions	OFAC + SEC
+History	20+ global crises
+Architecture
+zai_oracle.py
+│
+├── world_scanner.py
+├── history_engine.py
+├── crisis_replay.py
+├── scenario_engine.py
+├── regime_detector.py
+├── oracle_brain.py
+├── whale_tracker.py
+├── dashboard.py
+├── oracle_memory.py
+├── sanity_validator.py
+└── config.py
 
-Oracle contains a database of major global crises including:
-
-• World War I
-• World War II
-• 1973 Oil Crisis
-• Black Monday 1987
-• Dot-Com Bubble 2000
-• Global Financial Crisis 2008
-• COVID Crash 2020
-• Russia-Ukraine War 2022
-
-And many more.
-
-Each crisis contains:
-
-• trigger event
-• market reaction
-• signal breakdown
-• recovery timeline
-
-File Structure
-File	Purpose
-zai_oracle.py	Main launcher
-world_scanner.py	Live market + news scanning
-history_engine.py	Historical crisis database
-crisis_replay.py	Crisis replay simulation
-scenario_engine.py	Scenario generator
-oracle_brain.py	AI reasoning
-whale_tracker.py	Crypto + Congress signals
-dashboard.py	Terminal UI
-oracle_memory.py	Data tracking
-sanity_validator.py	Data validation
-config.py	Environment loader
 Screenshots
 
-Live Oracle output:
+Live Oracle output
 
-Crisis replay:
+screenshots/ss_main.png
 
-Scenario analysis:
 
-Philosophy Behind Oracle
+Crisis replay
 
-Oracle was built around a simple idea:
+screenshots/ss_replay_gulf.png
 
-Markets are not random.
 
-They respond to:
+Scenario simulation
 
-• wars
-• energy shocks
-• policy changes
-• systemic crises
+screenshots/ss_scenario.png
 
-History does not repeat exactly — but it often rhymes.
+Philosophy
+
+Markets react to systems, not charts.
+
+Those systems include:
+
+war
+
+energy
+
+policy
+
+inflation
+
+geopolitics
+
+liquidity
+
+History does not repeat exactly.
+
+But it rhymes.
 
 Oracle tries to detect those rhymes.
 
 Disclaimer
 
-This project is a research and analysis tool only.
+Research tool only.
 
-It is not financial advice.
+Not financial advice.
 
-Markets are unpredictable and historical patterns do not guarantee future outcomes.
+Past patterns do not guarantee future results.
