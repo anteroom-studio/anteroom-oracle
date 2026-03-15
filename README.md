@@ -295,21 +295,158 @@ History | 20+ global crises |
 ---
 
 ## Architecture
+## System Architecture
 
 ```text
-zai_oracle.py
-│
-├── world_scanner.py
-├── history_engine.py
-├── crisis_replay.py
-├── scenario_engine.py
-├── regime_detector.py
-├── oracle_brain.py
-├── whale_tracker.py
-├── dashboard.py
-├── oracle_memory.py
-├── sanity_validator.py
-└── config.py
+ZAI ORACLE CORE
+────────────────────────────────────────────────────────────────
+
+                     ┌──────────────────────────┐
+                     │      zai_oracle.py       │
+                     │   Main CLI Entry Point   │
+                     └────────────┬─────────────┘
+                                  │
+                                  ▼
+                     ┌──────────────────────────┐
+                     │      zai_launcher.py     │
+                     │  Boot sequence manager   │
+                     └────────────┬─────────────┘
+                                  │
+                                  ▼
+               ┌─────────────────────────────────────┐
+               │        hardware_detector.py         │
+               │  Detect CPU / RAM / GPU capability  │
+               └────────────────┬────────────────────┘
+                                │
+                                ▼
+
+DATA COLLECTION LAYER
+────────────────────────────────────────────────────────────────
+
+ world_scanner.py
+    │
+    ├─ market prices (stocks / crypto / commodities)
+    ├─ macro indicators
+    ├─ geopolitical signals
+    │
+    ▼
+ data_collector.py
+    │
+    ├─ aggregates multiple APIs
+    ├─ handles rate limits
+    └─ normalizes raw data
+
+ news_brain.py
+    │
+    ├─ scans 500+ news feeds
+    ├─ extracts geopolitical signals
+    └─ calculates topic intensity
+
+ whale_tracker.py
+    │
+    ├─ BTC whale wallets
+    ├─ ETH whale activity
+    └─ US Congress trades
+
+
+ANALYSIS LAYER
+────────────────────────────────────────────────────────────────
+
+ correlation_engine.py
+    │
+    ├─ cross-asset correlations
+    ├─ market stress signals
+    └─ volatility relationships
+
+ regime_detector.py
+    │
+    ├─ detects macro regime
+    ├─ risk-on vs risk-off
+    └─ war premium / inflation regime
+
+ sanity_validator.py
+    │
+    ├─ data quality checks
+    ├─ anomaly detection
+    └─ confidence scoring
+
+
+HISTORICAL INTELLIGENCE
+────────────────────────────────────────────────────────────────
+
+ history_engine.py
+    │
+    ├─ database of historical crises
+    ├─ similarity matching
+    └─ pattern comparison
+
+ crisis_replay.py
+    │
+    ├─ replay historical market days
+    ├─ simulate oracle output
+    └─ compare predictions vs outcomes
+
+
+PREDICTION ENGINE
+────────────────────────────────────────────────────────────────
+
+ scenario_engine.py
+    │
+    ├─ bull / base / bear scenarios
+    ├─ macro outcome modelling
+    └─ probability weighting
+
+ oracle_brain.py
+    │
+    ├─ AI reasoning engine
+    ├─ integrates signals from all modules
+    └─ generates final prediction
+
+ oracle_memory.py
+    │
+    ├─ stores previous scans
+    ├─ tracks changes over time
+    └─ creates delta analysis
+
+
+OUTPUT LAYER
+────────────────────────────────────────────────────────────────
+
+ dashboard.py
+    │
+    ├─ terminal UI renderer
+    ├─ colored intelligence display
+    └─ scenario visualization
+
+
+CONFIGURATION
+────────────────────────────────────────────────────────────────
+
+ config.py
+    │
+    ├─ loads environment variables
+    ├─ API keys
+    └─ runtime settings
+
+ .env.example
+    │
+    └─ template for API keys
+
+ requirements.txt
+    │
+    └─ Python dependencies
+
+
+PROJECT FILES
+────────────────────────────────────────────────────────────────
+
+ README.md
+    │
+    └─ project documentation
+
+ .gitignore
+    │
+    └─ ignore secrets and cache files
 ```
 
 ---
