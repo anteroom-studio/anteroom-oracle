@@ -1,242 +1,94 @@
-<div align="center">
+# Anteroom Oracle
 
-# ZAI ORACLE 🔮
-### The All-Seeing Eye — Markets · Wars · Politics · Geopolitics
+**Geopolitical and macro intelligence terminal for market-regime research.**
 
-**by Zawwar | https://github.com/Zawwarsami16**
+Anteroom Oracle is a Python-based research system that combines live market data, world-event signals, geopolitical risk scoring, historical crisis comparison, whale-activity context, and scenario modeling into one terminal intelligence interface.
 
-![Python](https://img.shields.io/badge/Python-3.10+-blue?style=for-the-badge&logo=python)
-![AI](https://img.shields.io/badge/AI-Groq%20%7C%20Gemini%20%7C%20Claude-purple?style=for-the-badge)
-![Markets](https://img.shields.io/badge/System-Macro%20Intelligence-green?style=for-the-badge)
-![Interface](https://img.shields.io/badge/Interface-Terminal-black?style=for-the-badge)
-
-</div>
+> Built by **Anteroom Studio** as part of its research systems and intelligence tooling.
 
 ---
 
-## What Is ZAI Oracle?
+## Overview
 
-Most tools show **price charts**.  
-Most news tools show **headlines**.
+Most market tools focus on price charts or headline streams. Anteroom Oracle is designed to evaluate the wider system around markets: conflict, energy shocks, policy signals, macro stress, crypto flows, historical parallels, and regime behavior.
 
-ZAI Oracle watches **the world system**.
+It helps explore questions such as:
 
-It combines:
+- What market regime appears most consistent with current conditions?
+- Which world-event categories are driving risk?
+- Which historical crises share similar signal patterns?
+- How do scenario probabilities shift under different inputs?
+- What should researchers monitor next?
 
-• global markets  
-• wars and conflicts  
-• geopolitical risk  
-• energy shocks  
-• political signals  
-• crypto intelligence  
-• historical crisis patterns  
-
-Then it asks:
-
-**“Given everything happening right now, what is most likely to happen next?”**
+This is a research tool, not a trading signal service.
 
 ---
 
-## Terminal Preview
+## Core Capabilities
 
-## Oracle Output Example
+- Live market scanning across equities, commodities, volatility, rates, and crypto
+- World-news and geopolitical signal extraction
+- Geopolitical risk index generation
+- Market-regime detection
+- Historical crisis comparison and replay mode
+- Scenario modeling for custom macro assumptions
+- Whale-activity and public-flow context
+- Terminal dashboard rendering
+- Local storage for snapshots and run history
 
-```bash
-python3 zai_oracle.py
-
-╔══════════════════════════════════════════════════════════════╗
-║          ZAI ORACLE  —  THE ALL-SEEING EYE                  ║
-║          2026-03-14  20:07:06                              ║
-║          by Zawwar · github.com/Zawwarsami16               ║
-╚══════════════════════════════════════════════════════════════╝
-AI: groq:llama-3.3-70b-versatile
-
-
-DATA HEALTH
-──────────────────────────────────────────────────────────────
-Market feeds: 20/20 verified
-Overall trust: ███████████ 110%
-
-LIVE MARKETS
-──────────────────────────────────────────────────────────────
-S&P 500        $ 6,632  ▼ -0.61%
-NASDAQ         $22,105  ▼ -0.93%
-Gold           $ 5,020  ▼ -1.06%
-Oil WTI        $ 98.71  ▲ +3.11%   WATCH $100
-Nat Gas        $  3.13  ▼ -3.15%
-Silver         $ 80.69  ▼ -3.93%
-VIX Fear         27.19  ▼ -0.37%
-DXY Dollar      100.50  ▲ +0.76%
-10Y Yield         4.29% ▲ +0.28%
-Bitcoin        $71,144  ▲ +0.48%
-Ethereum       $ 2,095  ▲ +0.19%
-Solana         $   88   ▼ -0.09%
-
-
-GEOPOLITICAL RISK INDEX
-──────────────────────────────────────────────────────────────
-Global Risk: █████████░░ 86.5 / 100   EXTREME
-
-War Escalation        █████ 25/25
-Energy Chokepoint     █████ 20/20
-Sanctions Trade       ███░░  9/15
-Political Instability █████ 15/15
-Financial Stress      █████ 15/15
-Tech Disruption       █░░░░  2/10
-
-
-MARKET REGIME
-──────────────────────────────────────────────────────────────
-RISK-OFF / WAR PREMIUM
-
-Drivers:
-• Active conflict headlines (55 articles)
-• Oil elevated near $99
-• VIX elevated → risk aversion
-
-Asset behaviour in this regime:
-Gold   → BULLISH
-Oil    → BULLISH
-Stocks → BEARISH
-Bonds  → BULLISH
-Crypto → BEARISH
-
-
-WORLD SIGNALS
-──────────────────────────────────────────────────────────────
-Risk Level: CRITICAL
-
-War Conflict        ███████████████ 55
-Oil Energy          ███████████████ 53
-Crypto Regulation   ███████████████ 20
-Elections Politics  ███████████████ 15
-Recession Economy   ███████         7
-Geopolitics         ██████          6
-Tech AI             █████           5
-
-
-CAUSAL CHAINS
-──────────────────────────────────────────────────────────────
-Energy Shock
-Oil +3.1% → inflation pressure → yields rise → stocks compress
-
-War Risk Premium
-War headlines → oil bid → gold safe haven → equities risk-off
-
-Dollar Wrecking Ball
-DXY +0.8% → EM pressure → crypto headwind
-
-
-WHALE INTELLIGENCE
-──────────────────────────────────────────────────────────────
-Overall: MIXED WHALE SIGNALS
-
-BTC whales: Source not connected
-ETH whales: Data unavailable
-Congress:   NEUTRAL
-
-
-HISTORICAL PARALLELS
-──────────────────────────────────────────────────────────────
-1. Russia-Ukraine Invasion (2022)
-   Similarity: 78.8%
-
-2. Gulf War (1990)
-   Similarity: 78.2%
-
-3. World War I (1914)
-   Similarity: 77.0%
-
-
-SCENARIO ENGINE
-──────────────────────────────────────────────────────────────
-Bear Case   ██████████░░░░░░░░░░ 50%
-S&P500 −10% to −20%
-Oil +30% to +50%
-
-Base Case   ███████░░░░░░░░░░░░░ 35%
-Range-bound market
-Oil 99-109
-
-Bull Case   ███░░░░░░░░░░░░░░░░░ 15%
-Oil drops
-Risk-on rally
-
-
-TACTICAL READ
-──────────────────────────────────────────────────────────────
-Stance: DEFENSIVE
-
-Watch:
-• VIX
-• Oil
-• S&P500
-
-
-ORACLE PREDICTION
-──────────────────────────────────────────────────────────────
-Outlook: BEARISH
-Confidence: ███████░░░ 72%
-
-Markets may decline if war escalation continues
-Energy prices likely to remain elevated
-Crypto vulnerable to liquidity shocks
-
-
-──────────────────────────────────────────────────────────────
-ZAI Oracle v3.0  ·  by Zawwar
-All data saved to oracle_data/
-Run again for fresh scan
-
-Try:
-python3 zai_oracle.py --replay gulf-war
-python3 zai_oracle.py --scenario oil=115,vix=36
-```
-
+---
 
 ## Quick Start
 
-Clone repository
+Install dependencies:
 
 ```bash
-git clone https://github.com/Zawwarsami16/ZAI-Oracle
-cd ZAI-Oracle
+pip install -r requirements.txt
 ```
 
-Create environment file
+Create local environment settings:
 
 ```bash
 cp .env.example .env
-nano .env
 ```
 
-Add API key
+Optional keys can be added to `.env`:
 
-```
-GROQ_KEY=gsk_your_key_here
+```env
+GROQ_KEY=
+GEMINI_KEY=
+ANTHROPIC_KEY=
+ETHERSCAN_KEY=
+TELEGRAM_BOT_TOKEN=
+TELEGRAM_CHAT_ID=
+DATA_PATH=./oracle_data
 ```
 
-Run Oracle
+Run a full scan:
 
 ```bash
 python3 zai_oracle.py
 ```
+
+> The launcher filename is retained for compatibility. It can be renamed after repository migration.
 
 ---
 
 ## Command Modes
 
-### Live Analysis
+Run live analysis:
 
 ```bash
 python3 zai_oracle.py
 ```
 
-Runs full world analysis.
+List replayable crises:
 
----
+```bash
+python3 zai_oracle.py --list-crises
+```
 
-### Crisis Replay Mode
+Run historical replay mode:
 
 ```bash
 python3 zai_oracle.py --replay gulf-war
@@ -247,233 +99,59 @@ python3 zai_oracle.py --replay 1973-oil-shock
 python3 zai_oracle.py --replay dotcom-peak
 ```
 
-Shows:
-
-• historical signals  
-• detected regime  
-• oracle prediction  
-• real outcome  
-
----
-
-### Scenario Engine
+Run scenario mode:
 
 ```bash
-python3 zai_oracle.py --scenario oil=115,vix=36
+python3 zai_oracle.py --scenario oil=115,vix=36,war_headlines=30
 ```
-
-Creates:
-
-• Bear case  
-• Base case  
-• Bull case  
-
----
-
-### Crisis List
-
-```bash
-python3 zai_oracle.py --list-crises
-```
-
-Lists all replayable crises.
 
 ---
 
 ## Data Coverage
 
 | System | Coverage |
-|------|------|
-Markets | S&P500, NASDAQ, Oil, Gold, BTC, ETH, VIX |
-Geopolitics | Reuters, Crisis Group, Foreign Policy |
-Energy | OPEC + supply shocks |
-Crypto | Whale wallets |
-Politics | Congress trades |
-Disasters | Earthquakes, outbreaks |
-History | 20+ global crises |
+|---|---|
+| Markets | S&P 500, NASDAQ, oil, gold, silver, VIX, DXY, rates, crypto |
+| World signals | Conflict, energy, policy, geopolitics, macro stress, technology |
+| Historical library | Crisis snapshots and historical regime comparisons |
+| Crypto context | Public whale-wallet and flow indicators where available |
+| Scenarios | Bear/base/bull research paths and custom input assumptions |
 
 ---
 
-## Architecture
 ## System Architecture
 
 ```text
-ZAI ORACLE CORE
-────────────────────────────────────────────────────────────────
-
-                     ┌──────────────────────────┐
-                     │      zai_oracle.py       │
-                     │   Main CLI Entry Point   │
-                     └────────────┬─────────────┘
-                                  │
-                                  ▼
-                     ┌──────────────────────────┐
-                     │      zai_launcher.py     │
-                     │  Boot sequence manager   │
-                     └────────────┬─────────────┘
-                                  │
-                                  ▼
-               ┌─────────────────────────────────────┐
-               │        hardware_detector.py         │
-               │  Detect CPU / RAM / GPU capability  │
-               └────────────────┬────────────────────┘
-                                │
-                                ▼
-
-DATA COLLECTION LAYER
-────────────────────────────────────────────────────────────────
-
- world_scanner.py
-    │
-    ├─ market prices (stocks / crypto / commodities)
-    ├─ macro indicators
-    ├─ geopolitical signals
-    │
-    ▼
- data_collector.py
-    │
-    ├─ aggregates multiple APIs
-    ├─ handles rate limits
-    └─ normalizes raw data
-
- news_brain.py
-    │
-    ├─ scans 500+ news feeds
-    ├─ extracts geopolitical signals
-    └─ calculates topic intensity
-
- whale_tracker.py
-    │
-    ├─ BTC whale wallets
-    ├─ ETH whale activity
-    └─ US Congress trades
-
-
-ANALYSIS LAYER
-────────────────────────────────────────────────────────────────
-
- correlation_engine.py
-    │
-    ├─ cross-asset correlations
-    ├─ market stress signals
-    └─ volatility relationships
-
- regime_detector.py
-    │
-    ├─ detects macro regime
-    ├─ risk-on vs risk-off
-    └─ war premium / inflation regime
-
- sanity_validator.py
-    │
-    ├─ data quality checks
-    ├─ anomaly detection
-    └─ confidence scoring
-
-
-HISTORICAL INTELLIGENCE
-────────────────────────────────────────────────────────────────
-
- history_engine.py
-    │
-    ├─ database of historical crises
-    ├─ similarity matching
-    └─ pattern comparison
-
- crisis_replay.py
-    │
-    ├─ replay historical market days
-    ├─ simulate oracle output
-    └─ compare predictions vs outcomes
-
-
-PREDICTION ENGINE
-────────────────────────────────────────────────────────────────
-
- scenario_engine.py
-    │
-    ├─ bull / base / bear scenarios
-    ├─ macro outcome modelling
-    └─ probability weighting
-
- oracle_brain.py
-    │
-    ├─ AI reasoning engine
-    ├─ integrates signals from all modules
-    └─ generates final prediction
-
- oracle_memory.py
-    │
-    ├─ stores previous scans
-    ├─ tracks changes over time
-    └─ creates delta analysis
-
-
-OUTPUT LAYER
-────────────────────────────────────────────────────────────────
-
- dashboard.py
-    │
-    ├─ terminal UI renderer
-    ├─ colored intelligence display
-    └─ scenario visualization
-
-
-CONFIGURATION
-────────────────────────────────────────────────────────────────
-
- config.py
-    │
-    ├─ loads environment variables
-    ├─ API keys
-    └─ runtime settings
-
- .env.example
-    │
-    └─ template for API keys
-
- requirements.txt
-    │
-    └─ Python dependencies
-
-
-PROJECT FILES
-────────────────────────────────────────────────────────────────
-
- README.md
-    │
-    └─ project documentation
-
- .gitignore
-    │
-    └─ ignore secrets and cache files
+Anteroom Oracle
+├── zai_oracle.py          Main CLI entry point
+├── world_scanner.py       Market and world-signal collection
+├── data_collector.py      Data aggregation and normalization
+├── news_brain.py          News and geopolitical signal extraction
+├── whale_tracker.py       Public whale-activity context
+├── correlation_engine.py  Cross-asset and stress-signal logic
+├── regime_detector.py     Market-regime detection
+├── sanity_validator.py    Data quality and confidence scoring
+├── history_engine.py      Historical crisis comparison
+├── crisis_replay.py       Replay and scenario lab modes
+├── scenario_engine.py     Scenario and geo-risk modeling
+├── oracle_brain.py        Rule/model-assisted scenario summary
+├── oracle_memory.py       Snapshot and delta memory
+├── dashboard.py           Terminal renderer
+├── config.py              Environment and runtime settings
+└── .env.example           Safe local configuration template
 ```
 
 ---
 
-## Philosophy
+## Safety and Scope
 
-Markets move because of **systems**:
+Anteroom Oracle is intended for research, education, and internal experimentation. Its outputs may be incomplete, stale, or incorrect depending on data-source availability, model behavior, API limits, and market conditions.
 
-• war  
-• energy  
-• policy  
-• inflation  
-• geopolitics  
-
-History doesn't repeat exactly.
-
-But it **rhymes**.
-
-Oracle tries to detect those rhymes.
+This project does not provide financial, investment, legal, or professional advice. Always verify outputs independently before using them in any real-world decision.
 
 ---
 
-## Disclaimer
+## Studio
 
-Research tool only.  
-Not financial advice.
-
----
-
-**Created by Zawwar**
+**Anteroom Studio**  
+Research systems, intelligence interfaces, and experimental software.
