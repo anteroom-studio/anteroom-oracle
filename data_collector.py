@@ -17,7 +17,7 @@ import time
 import json
 import requests
 import pandas as pd
-from datetime import datetime, timedelta
+from datetime import datetime
 from config import DATA_PATH, DATASETS, HISTORY_FROM_YEAR, UPDATE_INTERVAL
 
 # ================================================================

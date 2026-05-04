@@ -19,7 +19,7 @@ import os
 import json
 import time
 import requests
-from datetime import datetime, timedelta
+from datetime import datetime
 from config import DATA_PATH, ETHERSCAN_KEY, BTC_WHALE_ADDRESSES, ETH_WHALE_ADDRESSES
 
 

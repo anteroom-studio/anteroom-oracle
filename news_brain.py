@@ -11,7 +11,7 @@ import json
 import time
 import requests
 import xml.etree.ElementTree as ET
-from datetime import datetime, timedelta
+from datetime import datetime
 from config import DATA_PATH, ANTHROPIC_KEY
 
 # ============================================================
