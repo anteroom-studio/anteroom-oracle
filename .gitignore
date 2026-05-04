@@ -3,7 +3,3 @@ oracle_data/
 __pycache__/
 *.pyc
 *.zip
-oracle_data/
-.env
-__pycache__/
-*.pyc
