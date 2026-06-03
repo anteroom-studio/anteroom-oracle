@@ -208,7 +208,7 @@ def compare_current_to_history(df, crash_patterns):
 
     for crash_name, pattern in crash_patterns.items():
         score = 0
-        matches = 0
+        compared = 0
         details = []
 
         for col in current_changes:
@@ -217,20 +217,24 @@ def compare_current_to_history(df, crash_patterns):
                 curr_val = current_changes[col]
                 hist_val = pattern[hist_key]
 
-                # Are they moving in the same direction?
+                # Count every indicator the two periods share, THEN check
+                # direction. score (numerator) and compared (denominator) have
+                # to move independently — incrementing them together pinned the
+                # ratio at 100% the moment a single indicator lined up.
+                compared += 1
                 if (curr_val > 0 and hist_val > 0) or (curr_val < 0 and hist_val < 0):
                     score += 1
-                    matches += 1
                     details.append(
                         f"{col}: now {curr_val:+.1f}% vs history {hist_val:+.1f}%"
                     )
 
-        if matches > 0:
-            similarity_pct = (score / matches) * 100
+        if compared > 0:
+            similarity_pct = (score / compared) * 100
             similarities.append({
                 "crash": crash_name,
                 "similarity_pct": round(similarity_pct, 1),
-                "matching_indicators": matches,
+                "matching_indicators": score,
+                "indicators_compared": compared,
                 "details": details[:5]
             })
 
