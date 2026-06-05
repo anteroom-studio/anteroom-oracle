@@ -264,12 +264,16 @@ def detect_regime(signals, prices):
                 score += 8
 
         # Price conditions
+        # oil/vix default to 0 when the live feed is missing a value, and a
+        # real price is never 0, so skip those checks unless we actually have
+        # data. Otherwise a "<threshold" condition (e.g. RISK_ON vix<18) would
+        # pass on every outage and bias the classifier toward risk-on regimes.
         price_conds = cond.get("prices", {})
-        if "oil" in price_conds:
+        if "oil" in price_conds and oil > 0:
             threshold = float(price_conds["oil"].replace(">", "").replace("<", ""))
             if ">" in price_conds["oil"] and oil > threshold:  score += 10
             if "<" in price_conds["oil"] and oil < threshold:  score += 10
-        if "vix" in price_conds:
+        if "vix" in price_conds and vix > 0:
             threshold = float(price_conds["vix"].replace(">", "").replace("<", ""))
             if ">" in price_conds["vix"] and vix > threshold:  score += 10
             if "<" in price_conds["vix"] and vix < threshold:  score += 10
