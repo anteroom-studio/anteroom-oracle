@@ -168,7 +168,7 @@ def extract_crash_patterns(df):
             for col in df.columns:
                 if col in pre_crash.columns:
                     series = pre_crash[col].dropna()
-                    if len(series) > 4:
+                    if len(series) > 4 and series.iloc[0] != 0:
                         total_change = ((series.iloc[-1] - series.iloc[0]) /
                                         abs(series.iloc[0])) * 100
                         pattern[f"{col}_change_pct"] = round(total_change, 2)
@@ -199,7 +199,7 @@ def compare_current_to_history(df, crash_patterns):
     for col in df.columns:
         if col in current.columns:
             series = current[col].dropna()
-            if len(series) > 2:
+            if len(series) > 2 and series.iloc[0] != 0:
                 change = ((series.iloc[-1] - series.iloc[0]) /
                           abs(series.iloc[0])) * 100
                 current_changes[col] = round(change, 2)
