@@ -161,7 +161,7 @@ def run_full_analysis():
     from regime_detector import detect_regime
 
     hist_data = compare_to_history(world_situation, news_data.get("signals", {}), prices)
-    top_match = hist_data.get("top_matches", [{}])[0]
+    top_match = (hist_data.get("top_matches") or [{}])[0]
     conf_score, conf_breakdown = calculate_confidence(
         news_signals=news_data.get("signals", {}),
         hist_matches=hist_data,
